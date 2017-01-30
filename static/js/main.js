@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop();
         //Check si pas en mode portable
-        if ($("#myNavBar").is(":visible") == true) {
+        if ($("#myNavBar").is(":visible") == true && $("#myNavBar").attr("class") != "navbar-collapse collapse in") {
             if(scroll_pos > $(".intro-header").height() - $(".navbar-custom").height()) {
                 $(".navbar-custom").css('background-color', '#3f79c4');
             } else {
