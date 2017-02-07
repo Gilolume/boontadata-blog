@@ -12,4 +12,13 @@ $(document).ready(function(){
             }
         }
     });
+
+
+
+
+    $(window).resize(function() {
+        if ($("#myNavBar").css("display") == "none" && $(".navbar-custom").css('background-color', '#3f79c4')) {
+            $(".navbar-custom").css('background-color', '');
+        }
+    });
 });

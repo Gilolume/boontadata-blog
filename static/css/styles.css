@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+a {
+    outline: 0;
+    text-decoration: none;
+}
 body {
     font-family: 'Lora', 'Times New Roman', serif;
     font-size: 20px;
@@ -288,6 +292,11 @@ hr.small {
     color: #0085A1;
     text-decoration: underline;
 }
+
+.post-preview > .post-meta > .post-share {
+    float: right;
+}
+
 @media only screen and (min-width: 768px) {
     .post-preview > a > .post-title {
         font-size: 36px;
