@@ -29,9 +29,9 @@ $(document).ready(function(){
         }
     });
 
-    if ($("#postToScroll").length) {
+    if ($("#postToScroll").length && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('html, body').animate({
             scrollTop: $("#postToScroll").offset().top - $(".navbar-custom").height()
-        }, 1000);
+        });
     }
 });
