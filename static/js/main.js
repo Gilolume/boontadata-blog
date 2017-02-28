@@ -28,4 +28,10 @@ $(document).ready(function(){
             $("#boontadata_home_link").show();
         }
     });
+
+    if ($("#postToScroll").length) {
+        $('html, body').animate({
+            scrollTop: $("#postToScroll").offset().top - $(".navbar-custom").height()
+        }, 500);
+    }
 });
