@@ -32,6 +32,6 @@ $(document).ready(function(){
     if ($("#postToScroll").length) {
         $('html, body').animate({
             scrollTop: $("#postToScroll").offset().top - $(".navbar-custom").height()
-        }, 500);
+        }, 1000);
     }
 });
