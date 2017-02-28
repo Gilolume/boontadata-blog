@@ -1,3 +1,10 @@
+//Gestion scroll pour article
+if ($("#postToScroll").length && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $('html, body').animate({
+        scrollTop: $("#postToScroll").offset().top - $(".navbar-custom").height()
+    });
+}
+
 //Gestion couleur de la nav-bar
 $(document).ready(function(){
 
@@ -28,10 +35,5 @@ $(document).ready(function(){
             $("#boontadata_home_link").show();
         }
     });
-
-    if ($("#postToScroll").length && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        $('html, body').animate({
-            scrollTop: $("#postToScroll").offset().top - $(".navbar-custom").height()
-        });
-    }
 });
+
